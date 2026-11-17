@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа № 4 — Веб-разработка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">WEB-PRACTICE // 04</a>
+                <div class="nav-links">
+                    <a href="#stages">Этапы работы</a>
+                    <a href="#tech">Стек</a>
+                    <a href="#check">Проверка</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="badge">Размещение на веб-хостинге</span>
+            <h1>Сайт успешно развёрнут на удалённом сервере</h1>
+            <p>Демонстрационный веб-проект, загруженный в корневую директорию хостинга с привязкой доменного имени.</p>
+            <a href="#stages" class="btn">Смотреть этапы выполнения</a>
+        </section>
+
+        <section id="stages">
+            <h2>Выполненные этапы</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Настройка хостинга</h3>
+                    <p>Создан аккаунт на виртуальном хостинге, получены реквизиты доступа к панели управления и файловому менеджеру.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Загрузка файлов</h3>
+                    <p>Очищена корневая директория сайта и загружена структура проекта: <code>index.html</code>, папка стилей <code>css/</code> и скриптов <code>js/</code>.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Привязка домена</h3>
+                    <p>К созданному проекту привязан бесплатный поддомен хостинг-провайдера для публичного доступа из сети Интернет.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech">
+            <h2>Используемые технологии</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>HTML5</h3>
+                    <p>Семантическая разметка страницы: шапка, навигация, секции контента и подвал документа.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS3 (Grid & Flexbox)</h3>
+                    <p>Адаптивная вёрстка без сторонних библиотек с использованием CSS-переменных и тёмной цветовой схемы.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Клиентский интерактив для проверки корректности загрузки страницы и вывода системной информации.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="check">
+            <div class="status-box">
+                <h3>Проверка работы скриптов</h3>
+                <p class="status-desc">Нажмите на кнопку ниже, чтобы убедиться, что страница корректно отдаётся сервером и выполняет JS-код.</p>
+                <button class="btn" id="check-btn">Проверить отклик</button>
+                <div id="ping-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Практическая работа № 4 • Размещение веб-сайта на хостинге • 2026</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
